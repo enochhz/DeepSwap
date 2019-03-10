@@ -160,6 +160,7 @@ class FaceswapControl():
         """ Read stdout from the subprocess. If training, pass the loss
         values to Queue """
         logger.debug("Opening stdout reader")
+        counter = 0
         while True:
             try:
                 output = self.process.stdout.readline()
@@ -173,9 +174,10 @@ class FaceswapControl():
                 if (self.command == "train" and self.capture_loss(output)) or (
                         self.command != "train" and self.capture_tqdm(output)):
                     continue
-                if self.command == "train" and output.strip().endswith("saved models"):
+                if self.command == "train" and output.strip().endswith(str(counter) + " saved models"):
                     logger.debug("Trigger update preview")
                     self.wrapper.tk_vars["updatepreview"].set(True)
+                    counter += 1
                 print(output.strip())
         returncode = self.process.poll()
         message = self.set_final_status(returncode)
