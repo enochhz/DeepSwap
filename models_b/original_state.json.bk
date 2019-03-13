@@ -1,0 +1,43 @@
+{
+  "name": "original",
+  "sessions": {
+    "1": {
+      "timestamp": 1552357898.1950514,
+      "no_logs": false,
+      "loss_names": {
+        "a": [
+          "loss"
+        ],
+        "b": [
+          "loss"
+        ]
+      },
+      "batchsize": 64,
+      "iterations": 8701
+    }
+  },
+  "lowest_avg_loss": {
+    "a": 0.026551261972635985,
+    "b": 0.024907362721860407
+  },
+  "iterations": 8701,
+  "inputs": {
+    "face:0": [
+      64,
+      64,
+      3
+    ]
+  },
+  "training_size": 256,
+  "config": {
+    "icnr_init": false,
+    "subpixel_upscaling": false,
+    "reflect_padding": false,
+    "dssim_mask_loss": true,
+    "penalized_mask_loss": true,
+    "lowmem": false,
+    "dssim_loss": false,
+    "mask_type": null,
+    "coverage": 62.5
+  }
+}
