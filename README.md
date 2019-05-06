@@ -1,5 +1,4 @@
 Faceswap is a tool that utilizes deep learning to recognize and swap faces in pictures and videos.
-![Screenshots](https://i.imgur.com/nWHFLDf.jpg)
 
 Make sure you check out [INSTALL.md](INSTALL.md) before getting started.
 
