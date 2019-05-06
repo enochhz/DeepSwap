@@ -8,7 +8,6 @@ Make sure you check out [INSTALL.md](INSTALL.md) before getting started.
   - [Train](#train)
   - [Convert](#convert)
   - [GUI](#gui)
-  - [General notes:](#general-notes)
 ---
 ## How To setup and run the project
 Faceswap is a Python program that will run on multiple Operating Systems including Windows, Linux and MacOS.
