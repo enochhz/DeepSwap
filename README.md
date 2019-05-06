@@ -1,4 +1,3 @@
-**Notice:** This repository is not operated or maintained by /u/deepfakes. Please read the explanation below for details.
 # deepfakes_faceswap
 
 Faceswap is a tool that utilizes deep learning to recognize and swap faces in pictures and videos.
